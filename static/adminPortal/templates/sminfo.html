@@ -1,0 +1,35 @@
+<ion-view title="Welcome Home">
+     <ion-nav-buttons side="left">
+        <a class="button button-clear" ui-sref="home">back</a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ng-click="logout()">Log Out</a>
+    </ion-nav-buttons>
+    
+    
+    <ion-content>
+         <div class="page">            
+              <h2>Welcome to <br/>SalesMan Information</h2> 
+         </div>
+         <div class="list list-inset" ng-controller="sminfoController">
+      <table class="item item-input">
+          <thead>
+              <tr>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </thead>
+          <tbody>
+         
+          <tr ng-repeat="salesmen in salesmen.">
+            <td>Sales Man Name {{salesmen.name}}</td>
+            <td>Sales Man Email {{salesmen.email}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <tbody>
+        
+        </div>
+         
+    </ion-content> 
+</ion-view>

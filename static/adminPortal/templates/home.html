@@ -1,0 +1,20 @@
+<ion-view title="Welcome Home /Add Company Details...">
+     
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ng-click="logout()">Log Out</a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+        <a class="button button-clear" ui-sref="salesmen">Add Salesman</a>
+        <a class="button button-clear" ui-sref="sminfo">Info Salesman</a>
+    </ion-nav-buttons>
+   
+    <ion-content>
+         <div class="page">             
+            <h2>Welcome to <br/>{{userInfo.user.FirstName | uppercase}} {{userInfo.user.LastName| uppercase}}</h2>
+              
+               <!--<button class="button button-block button-calm" ui-sref="company">View Company Detail</button>-->
+            
+         </div>
+         
+    </ion-content> 
+</ion-view>
